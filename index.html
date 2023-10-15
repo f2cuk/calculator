@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  <div class="calcBody">
+    <div class="topSection">
+      <div id="calcDisplay">0</div>
+      <!--<label id="calcDisplay">0</label>-->
+      <button class="calcButtons" id="clearButton" onclick="clearScreen()">Clr</button>
+    </div>
+    <div>
+      <button class="calcButtons" id="button1" onclick="buttonPressed('1')">1</button>
+      <button class="calcButtons" id="button2" onclick="buttonPressed('2')">2</button>
+      <button class="calcButtons" id="button3" onclick="buttonPressed('3')">3</button>
+      <button class="calcButtons" id="buttonPlus" onclick="buttonPressed('+')">+</button>
+    </div>
+    <div>
+      <button class="calcButtons" id="button4" onclick="buttonPressed('4')">4</button>
+      <button class="calcButtons" id="button5" onclick="buttonPressed('5')">5</button>
+      <button class="calcButtons" id="button6" onclick="buttonPressed('6')">6</button>
+      <button class="calcButtons" id="buttonMinus" onclick="buttonPressed('-')">-</button>
+    </div>
+    <div>
+      <button class="calcButtons" id="button7" onclick="buttonPressed('7')">7</button>
+      <button class="calcButtons" id="button8" onclick="buttonPressed('8')">8</button>
+      <button class="calcButtons" id="button9" onclick="buttonPressed('9')">9</button>
+      <button class="calcButtons" id="buttonTimes" onclick="buttonPressed('*')">*</button>
+    </div>
+    <div>
+      <button class="calcButtons" id="buttonDecimal" onclick="buttonPressed('.')">.</button>
+      <button class="calcButtons" id="button0" onclick="buttonPressed('0')">0</button>
+      <button class="calcButtons" id="buttonEquals" onclick="equals()">=</button>
+      <button class="calcButtons" id="buttonDivide" onclick="buttonPressed('/')">/</button>
+    </div>
+  </div>
+  
+  <script src="index.js"></script>
+</body>
+</html>
